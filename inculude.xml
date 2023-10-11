@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="InculudeExampleSuite">
+  <test thread-count="5" name="InculudeExampleTest">
+   <classes>
+	   <class name="com.neotech.lesson01.TitleAndLoginValidation">
+	   
+		   <methods>
+			  <!-- 
+			   <include name=" titleValidation"></include> -->
+			   <include name="logoValidation"></include>
+		   </methods>
+	   </class>
+	   
+   </classes>
+    
+  </test> <!-- Test1 -->
+</suite> <!-- Suite1 -->

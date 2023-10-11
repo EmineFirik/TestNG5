@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HomeWork3Suite">
+  <test thread-count="5" name="HomeWork3Test">
+    <classes>
+      <class name="com.neotech.lesson03.GroupsDemo"/>
+      <class name="com.neotech.lesson03.HomeWork_1"/>
+      <class name="com.neotech.lesson03.HomeWork1"/>
+      
+      <class name="com.neotech.lesson03.HomeWork_1">
+		  <methods>
+			  
+			 <include name="HomeWork_1"></include> 
+			 <!-- 
+			 <exclude name="HomeWork_1"></exclude>-->
+			  
+		  </methods>
+	  </class>
+      <class name="com.neotech.lesson03.DataProviderDemo"/>
+    </classes>
+  </test> <!-- HomeWork3Test -->
+</suite> <!-- HomeWork3Suite -->

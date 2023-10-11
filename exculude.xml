@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ExcludeExampleSuite">
+  <test thread-count="5" name="TExculudeExampleest">
+	  
+	  <!--We want to execute all lesson01 except titleandvalidation class -->
+	
+	<!--First we can define only class -->
+	 <!-- 
+    <classes>
+      <class name="com.neotech.lesson01.TestNGAnnotions"/>
+      <class name="com.neotech.lesson01.TitleAndLoginValidation"/>
+      <class name="com.neotech.lesson01.TestNGDemo"/>
+      <class name="com.neotech.lesson01.HomeWork"/>
+      <class name="com.neotech.lesson01.MoreTestNGAnnotions"/>
+      <class name="com.neotech.lesson01.TitleAndLoginValidationn"/>
+    </classes>
+    --> 
+    <!-- All package excep certain class-->
+    <packages>
+		
+	<package name="com.neotech.lesson01.">	
+		
+		<exclude name="TitleAndLoginValidationn"></exclude>
+	</package>
+			
+	</packages>
+	
+	<classes>
+		
+		<class name="com.neotech.lesson01.TitleAndLoginValidationn">
+			<methods>
+				<exclude name=".*"></exclude>
+				
+			</methods>
+		</class>
+		
+		
+	</classes>
+	
+	
+	
+    
+  </test> <!-- TExculudeExampleest -->
+</suite> <!-- ExcludeExampleSuite -->
